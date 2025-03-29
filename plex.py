@@ -19,7 +19,7 @@ def get_totalSize(type):
         'type': str(type),
         'sort': '1',
         'X-Plex-Client-Identifier': constants.PLEX_CLIENT_ID,
-        'X-Plex-Token': constants.PLEX_API_KEY,
+        'X-Plex-Token': constants.PLEX_TOKEN,
         'X-Plex-Text-Format': 'plain',
         'X-Plex-Language': 'en',
     }
@@ -43,7 +43,7 @@ def watchlistBy(type):
             'X-Plex-Client-Identifier': constants.PLEX_CLIENT_ID,
             'X-Plex-Container-Start': str(start),
             'X-Plex-Container-Size': str(slice),
-            'X-Plex-Token': constants.PLEX_API_KEY,
+            'X-Plex-Token': constants.PLEX_TOKEN,
             'X-Plex-Text-Format': 'plain',
             'X-Plex-Language': 'en',
         }
